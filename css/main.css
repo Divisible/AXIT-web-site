@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-color: #ff9b51;
+  --light-color: #fff;
+  --medium-color: #86878b;
+  --dark-color: #333;
+}
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  background: var(--light-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--light-color);
+}
+
+ul {list-style: none;}
+
+h1, h2, h3, h4 {text-transform: capitalize;}
+
+img {width: 100%}
+
+p {color: var(--medium-color)}
+
+
+/* Utilities */
+.container {
+  max-width: 1068px;
+  padding: 0 1rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header - main avigation */
+.main-nav {
+  background: #000;
+  min-height: 70px;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.3rem;
+}
+
+.navigation-logo img {
+  width: 80px;
+  height: 30px;
+}
+
+.navigation-items ul {display: flex;}
+
+.navigation-items ul li {
+  text-transform: capitalize;
+  margin: 0 1rem;
+}
+
+.navigation-items ul li:last-child {margin: 0;}
+
+.navigation-items ul li a {
+  color: var(--medium-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+
+.navigation-items ul li a:hover {
+  color: var(--light-color);
+  border-bottom: 1px solid var(--light-color);
+}
+
+/* Header - content */
+.header-content {background: #9a9a9a;}
+
+.header-content .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-tittle {margin: 2rem 0;}
+
+.header-tittle h1 {
+  font-size: 2rem;
+  color: #b0b0b0;
+}
+
+.header-grid-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-information {max-width: 50%;}
+
+.header-information img {
+  width: 175px;
+  height: 60px;
+}
+
+.header-information h2 {
+  font-family: "Raleway", sans-serif;
+  color: var(--light-color);
+  font-weight: 400;
+  font-size: 2.25rem;
+  margin-top: 2rem;
+}
+
+.header-information p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: var(--dark-color)
+}
+
+.header-form {
+  max-width: 50%;
+}
+
+/* Header - content */
